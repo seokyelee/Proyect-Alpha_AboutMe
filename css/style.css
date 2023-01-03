@@ -1,10 +1,46 @@
 Body {
-    margin:0;
-    width: 100vh;
+    margin:auto;
+    font-family: IBM Plex Sans;
+    width: 100vw;
     height: 100vh;
+    background-color:#141414 ;
+    color:#FFFFFF;
+    display: flex;
+    flex-flow:column nowrap;
 }
 
-.cabecera {
-    width: 320px;
-    height: 65px;
+nav {
+    margin: auto;
+    width: 100vw;       
+    height: 90px;
+    background-color:  #282828; 
+    text-align: center;
+    align-items:  flex-start:
+}
+
+h1 {
+    font-size: 140px;
+}
+
+li {
+    display: inline;
+}
+
+
+/* colores */
+li, span, sup, .saludo h3 {
+    color: #03E3BA;
+    font-family:  IBM Plex Sans;
+    font-weight:400;
+}
+.saludo :nth-child(2) {
+    font-size: 20px;
+    color: transparent;
+    text-shadow: 10px 10px 4px #03E3BA, 8px -8px #03E3BA;
+}
+p {
+    color: #FFFFFF;
+}
+.hashtag :nth-child(2n)  {
+    color: #03E3BA;
 }
