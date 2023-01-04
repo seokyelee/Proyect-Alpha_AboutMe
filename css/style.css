@@ -1,46 +1,106 @@
-Body {
-    margin:auto;
-    font-family: IBM Plex Sans;
+body, html {
     width: 100vw;
     height: 100vh;
+    box-sizing:border-box;
+    margin: 0;
     background-color:#141414 ;
-    color:#FFFFFF;
+    color: #FFFFFF;
+    font-family: IBM Plex Sans;
     display: flex;
-    flex-flow:column nowrap;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
 }
 
-nav {
-    margin: auto;
-    width: 100vw;       
-    height: 90px;
-    background-color:  #282828; 
-    text-align: center;
-    align-items:  flex-start:
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.header ul {
+    margin:0;
+    width: 100vw; 
+    height: 80px;
+    background-color: #282828; 
+    display:flex;
+    flex: 1; 
+    position: fixed;
+    justify-content: space-around;
+}
+
+.header li {
+    display:flex;
+    font-size: 18px;
+    list-style: none;
+    justify-content:center;
+    align-items:center ;
+}
+
+main {
+    width: 75%;   
 }
 
 h1 {
-    font-size: 140px;
+    font-size: 130px;
+    margin: 0;
 }
 
-li {
-    display: inline;
+.saludo .hola {
+    margin-top: 160px;
+    padding: 20px;
+}
+
+.sector {
+    padding: 120px;
+}
+
+.hashtag-box {
+    background-color: black;
+    width: 400px;
+    height: 300px;
+    align-items: center;
+}
+
+h4 {
+    font-size: 16px;
+    font-family: IBM Plex Sans;
+    font-weight: 400;
 }
 
 
 /* colores */
+
+button {
+    color:#03E3BA;
+    background: transparent;
+    border-color: #03E3BA;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    padding: 4px 8px;
+}
+
 li, span, sup, .saludo h3 {
     color: #03E3BA;
     font-family:  IBM Plex Sans;
-    font-weight:400;
+    font-weight: 400;
 }
 .saludo :nth-child(2) {
-    font-size: 20px;
-    color: transparent;
-    text-shadow: 10px 10px 4px #03E3BA, 8px -8px #03E3BA;
+   font-size: 20px;
 }
+.text-green {
+    margin-top: -40px;
+    filter: blur(4px);
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.hashtag-box :nth-child(2) {
+    color:#03E3BA
+}
+
 p {
     color: #FFFFFF;
 }
-.hashtag :nth-child(2n)  {
-    color: #03E3BA;
+
+.footer {
+    align-self:flex-end;
 }
