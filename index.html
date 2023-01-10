@@ -13,21 +13,21 @@
 
 <body>
     <header>
-        <nav class="header">
-            <ul>
-                <li><button type="button">Contáctame</button></li>
-                <li><img src="img/logo-seokyelee-web.gif" alt="logoanimado" style="width:110px;"></li>
-                <li>
-                    <nav class="menu">
-                        <input type="checkbox" id="menu">
-                        <label for="menu"> M </label>
-                        <ul >
-                          <li ><a href="/">Cómo trabajo</a></li>
-                          <li><a href="/">Bio</a></li>
-                          <li><a href="/">Trabjaos</a></li>
-                          <li><a href="/">Contactos</a></li>
-                        </ul>
-                      </nav>
+        <nav >
+            <ul class="header">
+                <li class="menu1"><a href="/" target="_blank"><button type="button">Contáctame</button></a>
+                </li>
+                <li class="menu2"> <img src="img/logo-seokyelee-web.gif" alt="logoanimado" style="width:110px;">
+                </li>
+                <li class="menu3">
+                    <input type="checkbox" id="menu">
+                    <label for="menu"> M </label>
+                    <ul class="menuhamburguesa">
+                        <li><a href="/">Cómo trabajo</a></li>
+                        <li><a href="/">Bio</a></li>
+                        <li><a href="/">Trabajos</a></li>
+                        <li><a href="/">Contactos</a></li>
+                    </ul>
                 </li>
             </ul>
        </nav>
@@ -87,49 +87,65 @@
             <button type="button">E mail <img src="img/correo-electronico.png"width="40px"></img></button>
         </section>
 
-        <section class="form-box">
-            <form>
-                <p>Elige lo que te interesa hablar conmigo:</p>
-                <div>
+        <section class="form">
+            <form >
+                <p>Lo que te interesa</p>
+                <nav class="form-box">
                 <input type="radio" id="Brending" name="fav_ interes" value="Brending">
-                <label for="Brending">Brending</label><br>
+                <label for="Brending">Brending</label>
                 <input type="radio" id="Diseño UX" name="fav_interes" value="Diseño UX">
                 <label for="Diseño UX">Diseño UX</label>
                 <input type="radio" id="Desarollo web" name="fav_interes" value="Desarollo web">
-                <label for="Desarollo web">Desarollo web</label><br>
+                <label for="Desarollo web">Desarollo web</label>
                 <input type="radio" id="Digital Marketing" name="fav_interes" value="Digital Marketing">
                 <label for="Digital Marketing">Digital Marketing</label>
                 <input type="radio" id="storytelling" name="fav_interes" value="storytelling">
                 <label for="storytelling">storytelling</label>
-                </div>
-                
-          </form>
+                </nav>
+            </form>
+            <nav class="form-box2">
+            <form  action="/enviar-mensaje" method="POST">
+                <label for="nombre">Nombre:</label><br/>
+                <input type="text" id="nombre" name="nombre" /><br/>
+                <label for="email">Email:</label><br />
+                <input type="email" id="email" name="email" /><br />
+                <label for="mensaje">Mensaje:</label><br/>
+                <textarea id="mensaje" name="mensaje"></textarea><br/>
+                <input type="submit" value="Enviar mensaje" />
+            </form>
+        </nav>
         </section>
 
     </main>
 
     <footer class="footer">
-        <section class="background-footer" >
+        <section class="background-footer">
             <div>
+            <nav class="background-footer-nav1">
                 <ul class="footer-menu">
                     <li><a href="/">Cómo trabajo</a></li>
                     <li><a href="/">About me</a></li>
                     <li><a href="/">Trabajos</a></li>
                     <li><a href="/">Contactos</a></li>
-                 </ul>
-                 <address>
-                    seokyelee@gmail.com<br>
-                    Valencia España
-                </address>
+                </ul>
+            </nav>
+            <nav class="social">
+                    <a href="https://www.linkedin.com/in/seok-ye-lee-a8196941/"  ><img src="img/linkedin.png" width="40px" art="Linkedin"></a> 
+                    <a href="https://www.gmail.com"art="Linkedin"><img src="img/correo-electronico.png" width="40px" art="gmail"> </a> 
+                    <a href="https://www.twitter.com/home"art="twitter"><img src="img/twitter.png" width="40px" art="twitter"> </a> 
+            </nav>
+            <address>
+                    seokyelee@gmail.com
+                    <em>Valencia España</em>
+            </address>
             </div>
-            
-            <div>
+            <nav class="background-footer-nav2">
                 <ul>
                     <li><a href="/">2022 SYL INC.</a></li>
                     <li><a href="/">TERMS OD SERVICE</a></li>
                     <li><a href="/">PRIVSCY POLICY</a></li>
                 </ul>
-            </div>
+            </nav>
            
         </section>
 
