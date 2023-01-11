@@ -43,14 +43,6 @@ body{
     align-items: center;
 }
 
-.menu3 {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    flex-direction: column;
-    margin-top: 20px;
-}
-
 li button{
     font-size: 1.4rem;
 }
@@ -68,11 +60,17 @@ li button{
     font-size: 1.4rem;
     }
 
- /*menú hamburguesa*/
-
+.menu3 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+     flex-direction: column;
+     margin-top: 20px;
+    }
+    
  .menuhamburguesa {
     display: none;
-    margin-top:33px;
+    margin-top: 33px;
     padding: 0;
     width: 200px;
     }
@@ -81,30 +79,32 @@ li button{
     filter:hue-rotate(405deg);
     }
 
+.menu3 img:hover {
+        filter:hue-rotate(405deg);
+        }
+
 .menuhamburguesa a{
     text-decoration-line: none;
     color:#081C16;
-    font-weight: 500;
+    font-weight: 400;
     }
      
 .menu3 input:checked  ~ ul{
         display:block;
         margin-left: -150px;
+        margin-top:250px;
         }
 
 .menu3 input {
-        display: none;
+         display: none;
         }
-    
+
 .menu3 label {
     box-sizing: border-box;
     display: inline-block;
     width: 50px;
     height: 50px;
     line-height: 30px;
-    font-size: 3rem;
-    font-weight: 700;
-    user-select: none;
     }
 
 .menuhamburguesa li {
@@ -116,6 +116,8 @@ li button{
     padding:12px;
     border-bottom: solid 3px #081C16;
   }
+
+/*fin de header-empieza main*/
 
 main {
     display: flex;
@@ -221,7 +223,7 @@ article  {
 article p{
     display: flex;
     font-size: 1.3rem;
-    width: 80%;
+    width: 70%;
     margin-top: -20px;
     justify-content: space-between;
     align-items: baseline;
@@ -256,6 +258,7 @@ h4 {
     display: flex;
     justify-content: center;
     align-items:center;
+    flex-direction: column;
 }
 
 .resumen{
@@ -497,32 +500,36 @@ p {
     color: #d4cdc5;
 }
 
-.header .menu3:hover {
-    color:#FFFFFF;
-}
-
-.menu a:hover{
-    color:#03E3BA;
+.menu1 :hover{
+    filter:hue-rotate(405deg);
 }
 
 .links button:hover{
-    background-color: #FFFFFF;
-    color:#03E3BA;
+    filter:hue-rotate(405deg);
     border:solid 3px #03E3BA;
 }
 
 div .footer-menu a :hover {
-    color:#03E3BA;
+    filter:hue-rotate(405deg);
 }
 
-.footer a:hover {
-    color:black;
+.footer-menu :hover {
+    filter:hue-rotate(405deg);
+}
+.form .form-box2 input:hover {
+    filter:hue-rotate(405deg);
 }
 
 .form-box2 input:invalid {
     border-width: 3px;
     border-color: #c00000;
-  }
+}
+
+.social :hover{
+    filter:hue-rotate(405deg);
+}
+
+
 /*img-background*/
 
 
@@ -538,16 +545,27 @@ div .footer-menu a :hover {
 
 /* Mobile - Landscape */
 
-@media (min-width: 320px){
-    h1 {
-        font-size: 69px;
+@media (max-width: 320px){
+    
+    .claves article :nth-child(2){
+        flex-basis:100%;
     }
+    .claves article :nth-child(6){
+        flex-basis:100%;
+    }
+
+    h1{
+    font-size: 64px;
+    }
+
     h2{ 
-    font-size: 1.8rem;
-}
+    font-size: bold 24px;
+    }
+
     h3 {
         font-size: 3rem;
     }
+
     h5 {
     font-size:3.5rem;
     }
@@ -611,10 +629,9 @@ div .footer-menu a :hover {
 }
 
 
-
-
 /* Tablet */
 @media (min-width: 768px)  {
+
     h1 {
         font-size: 7rem;
     }
@@ -653,13 +670,13 @@ div .footer-menu a :hover {
 
 
 /* Desktop */
-@media (max-width: 1266px ) {
+@media (min-width: 1266px ) {
     .bio {
-        flex-direction: column;
-        margin-top: 90px;
+        flex-direction: row;
     }
+    
     h1 {
-        font-size: 12rem;
+        font-size: 14rem;
     }
     .menu ul{
         margin-left: -30%;
@@ -673,7 +690,10 @@ div .footer-menu a :hover {
 }
 
 /* Desktop  largo */
-@media (max-width: 2183px) {
+h1 {
+    font-size: 17.5rem;
+}
+@media (min-width: 2183px) {
     .claves article :nth-child(2){
         flex-basis:100%;
     }
