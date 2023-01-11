@@ -90,9 +90,9 @@ li button{
         }
      
     .menu3 input:checked  ~ ul{
-        display:block;
-        margin-left: -170px;
-        margin-top: 250px;
+        display: block;
+        margin-left: -190px;
+        margin-top: 300px;
         }
 
     .menu3 input {
@@ -372,7 +372,7 @@ main {
     }
 
     .form-box2 label {
-        display: block;
+        display: flex;
         margin-bottom: 10px;
         font-size: 18px;
         font-weight: bold;
