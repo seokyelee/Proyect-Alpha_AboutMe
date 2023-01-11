@@ -359,7 +359,7 @@ main {
     .form-box2 form {
         width: 500px;
         margin: 0 auto;
-        text-align: left;
+        text-align: center;
         padding: 20px;
         border: 1px solid #03E3BA;
         border-radius: 5px;
@@ -563,7 +563,7 @@ div .footer-menu a :hover {
 
 /* Mobile - Landscape */
 
-@media (min-width: 568px) {
+@media (min-width: 320px) and (min-width: 569px) {
 
    h1{
     font-size:89px;
@@ -571,15 +571,14 @@ div .footer-menu a :hover {
 
    h2{
     font-size:24px;
-
    }
 
    .saludo h3{
-    font-size: 18px;
+    font-size: 16px;
    }
 
    h3 .text-green {
-    font-size:16px;
+    font-size:18px;
    }
 
    h5{
@@ -606,11 +605,18 @@ div .footer-menu a :hover {
         width: 60% ;
    }
 
+   .form-box2 form {
+    width: 320px;
+    margin: 0 auto;
+    text-align: center;
+}
+
 }
 
 
+
 /* Tablet */
-@media (min-width: 768px)  {
+@media (min-width: 568px)and (max-width: 768px)  {
 
     h1{
         font-size:9rem;
@@ -627,12 +633,18 @@ div .footer-menu a :hover {
        h3 .text-green {
         font-size:20px;
        }
+
+       .form-box2 form {
+        width: 500px;
+        margin: 0 auto;
+        text-align: center;
+       }
 }
 
 
 
 /* Desktop top*/
-@media (min-width: 1266px )   {
+@media (min-width: 768px)and (max-width: 1280px )   {
 
     h1{
         font-size:16rem;
