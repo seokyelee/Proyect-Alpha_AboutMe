@@ -8,12 +8,10 @@ html {
     box-sizing: inherit;
 }
 
-body {
-    width: 100vw;
-    height: 100vh;
-}
 
 body{ 
+    width: 100vw;
+    height: 100vh;
     margin: auto;
     background-color:#081C16; 
     color: #FFFFFF;
@@ -28,17 +26,18 @@ body{
 .header{
     margin:0;
     display: flex;
-    justify-content: space-around;
+    justify-content:space-around;
     align-items: center;
-    background-color: #111111; 
+    background-color: black; 
     width: 100vw; 
     height: 80px;
+    flex-direction: row;
     flex-wrap: nowrap;
     }
 
 .menu {
     display:flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: row;
     align-items: center;
 }
@@ -50,7 +49,7 @@ li button{
 .header li {
     display:flex;
     list-style: none;
-    align-items: center ;
+   
 }
 
 .header button:hover {
@@ -83,9 +82,6 @@ li button{
     filter:hue-rotate(405deg);
     }
 
-.menu3 img {
-    position: fixed;
-}   
 
 .menuhamburguesa a{
     text-decoration-line: none;
@@ -101,7 +97,7 @@ li button{
 
 .menu3 input {
     display: none;
-        }
+    }
 
 .menu3 label {
     box-sizing: border-box;
@@ -120,6 +116,7 @@ li button{
     padding:12px;
     border-bottom: solid 3px #081C16;
   }
+
 
 /*fin de header-empieza main*/
 
@@ -141,8 +138,8 @@ main {
 }
 
 h1 {
-    font-size: 17.5rem;;
-    font-weight: 700;
+    font-size: 16rem;;
+    font-weight: 600;
     margin: 0;
 }
 
@@ -163,8 +160,8 @@ h1 {
  }
  
  .sector{
-    margin-top: 120px;
-    margin-bottom: 120px;
+    margin: 300px 150px;
+    
     font-size: 2.5rem;
     display: flex;
     flex-direction: column;
@@ -185,6 +182,7 @@ h1 {
 
 .hashtag-box {
     display: flex;
+    margin: 150px 150px;
     background-color: #111111;
     width: 700px;
     height: 500px;  
@@ -196,7 +194,8 @@ h1 {
 .claves { 
     display: flex;
     width: 80%;
-    margin:0;
+    margin-top:150px;
+    margin-bottom:200px;
     padding: 0;
     align-items:flex-start;
     justify-content: center;
@@ -214,11 +213,11 @@ h1 {
 
 
 article  {
+    margin-top: 0;
     width: 80%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
+    flex-direction: column;
+    justify-content: center;
     text-align: justify;
     font-size: 4rem;
     flex-wrap: wrap;
@@ -226,18 +225,15 @@ article  {
 
 article p{
     display: flex;
+    width: 100%;
     font-size: 1.3rem;
-    width: 70%;
-    margin-top: -20px;
-    justify-content: space-between;
+    margin-top: -30px;
+    justify-content: center;
     align-items: baseline;
     text-align: justify;
     flex-wrap: wrap;
 }
 
-.claves article :nth-child(4){
-    flex:0 0 100%;
-}
 
 sup {
     font-weight: 300;
@@ -276,20 +272,23 @@ h4 {
     justify-content: center;
     align-items:center;
     background-color: #03E3BA;
-    width: 200px;
-    height: 200px;
+    width: 170px;
+    height: 170px;
     border-radius: 50%;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
     }
 
 #circulo img {
     margin-top: 90px;
+    margin-bottom: -20px;
+    padding-bottom: 0;
 }
 
 .nombre{
     color:#03E3BA;
-    margin-top:30px;
+    margin-top: 0;
     border-top: solid 1px #03E3BA;
+    padding:0;
 }
 
 .links {
@@ -309,7 +308,7 @@ h4 {
     text-align: center;
     font-size: 1.5rem;
     font-weight: 700;
-    width: 49% ;
+    width: 33% ;
     padding: 8px;
     background-color: #081C16;
     color:#ffff;
@@ -331,7 +330,6 @@ h4 {
 
 .form-box input[type="radio"]:checked {
     box-shadow:  0 0 8px 3px  #03E3BA;
-
   }
 
 form .form-box {
@@ -552,163 +550,38 @@ div .footer-menu a :hover {
     background-position: center;
 }
 
-/*media query*/
 
-/* Mobile - Landscape */
 
-@media (max-width: 320px){
-    
-    .claves article :nth-child(2){
-        flex-basis:100%;
-    }
-    .claves article :nth-child(6){
-        flex-basis:100%;
-    }
-
-    h1{
-    font-size: 64px;
-    }
-
-    h2{ 
-    font-size: bold 24px;
-    }
-
-    h3 {
-        font-size: 3rem;
-    }
-
-    h5 {
-    font-size:3.5rem;
-    }
-
-    h4 {
-        font-size:1.2rem;
-    }
-
-    article p{
-        font-size: 20px;
-        margin-top: -50px;
-    }
-
-    sup {
-        font-size: 0.8rem;
-    }
-
-   .text-green {
-        font-size: 20px;
-    }
-
-    .saludo h3 {
-        font-size: 24px;
-    }
-}
-
+/* Mobile - Landscape 
 @media (min-width: 576px) {
-    h1 {
-        font-size: 4rem;
-    }
-    h2{ 
-    font-size: 1.8rem;
-}
-    h3 {
-        font-size: 3rem;
-    }
-    h5 {
-    font-size:3.5rem;
-    }
-
-    h4 {
-        font-size:1.2rem;
-    }
-
-    article p{
-        font-size: 20px;
-        margin-top: -50px;
-    }
-
-    sup {
-        font-size: 0.8rem;
-    }
-
-   .text-green {
-        font-size: 20px;
-    }
-
-    .saludo h3 {
-        font-size: 24px;
-    }
+   h1{
+    font-size:69px;
+   }
 }
 
 
-/* Tablet */
+/* Tablet 
 @media (min-width: 768px)  {
 
-    h1 {
-        font-size: 7rem;
-    }
-    h2{ 
-    font-size: 3rem;
-}
-    h3 {
-        font-size: 4rem;
-    }
-    h5 {
-    font-size:5rem;
-    }
-
-    h4 {
-        font-size:1.2rem;
-    }
-
-    article p{
-        font-size:20px;
-        margin-top: -50px;
-    }
-
-    sup {
-        font-size: 1rem;
-    }
-
-   .text-green {
-        font-size: 26px;
-    }
-
-    .saludo h3 {
-        font-size: 30px;
-    }
+   
 }
 
 
 
-/* Desktop */
-@media (min-width: 1266px ) {
-    .bio {
-        flex-direction: row;
+/* Desktop top*/
+@media (min-width: 1266px ) 
+
+@media (max-width: 2183px) {
+
+        .claves article :nth-child(2){
+            flex-basis:100%;
+        }
+
+        .claves article :nth-child(6){
+            flex-basis:100%;
+        }
     }
     
-    h1 {
-        font-size: 14rem;
-    }
-    .menu ul{
-        margin-left: -30%;
-    }
-    .text-green {
-        font-size: 26px;
-    }
-    .saludo h3 {
-        font-size: 38px;
-    }
-}
 
-/* Desktop  largo */
-h1 {
-    font-size: 17.5rem;
-}
-@media (min-width: 2183px) {
-    .claves article :nth-child(2){
-        flex-basis:100%;
-    }
-    .claves article :nth-child(6){
-        flex-basis:100%;
-    }
-}
+
+
