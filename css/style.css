@@ -64,8 +64,8 @@ li button{
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
-     flex-direction: column;
-     margin-top: 20px;
+    flex-direction: column;
+    margin-top: 20px;
     }
     
  .menuhamburguesa {
@@ -80,8 +80,12 @@ li button{
     }
 
 .menu3 img:hover {
-        filter:hue-rotate(405deg);
-        }
+    filter:hue-rotate(405deg);
+    }
+
+.menu3 img {
+    position: fixed;
+}   
 
 .menuhamburguesa a{
     text-decoration-line: none;
@@ -90,13 +94,13 @@ li button{
     }
      
 .menu3 input:checked  ~ ul{
-        display:block;
-        margin-left: -150px;
-        margin-top:250px;
-        }
+    display:block;
+    margin-left: -150px;
+    margin-top:250px;
+    }
 
 .menu3 input {
-         display: none;
+    display: none;
         }
 
 .menu3 label {
@@ -389,6 +393,13 @@ textarea {
 .form-box2 input[type="submit"]:hover {
     background-color: #111111;
 } 
+.footer .arriba{
+    filter: hue-rotate(-0.12turn);
+}
+
+.footer .arriba :hover{
+    filter: hue-rotate(405deg);
+}
 
 .footer {
     width: 100vw;
