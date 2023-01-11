@@ -560,7 +560,6 @@ div .footer-menu a :hover {
 }
 
 
-
 /* Mobile - Landscape */
 
 @media (min-width: 320px) and (min-width: 569px) {
@@ -616,7 +615,7 @@ div .footer-menu a :hover {
 
 
 /* Tablet */
-@media (min-width: 568px)and (max-width: 768px)  {
+@media (min-width: 768px)  {
 
     h1{
         font-size:9rem;
@@ -644,7 +643,7 @@ div .footer-menu a :hover {
 
 
 /* Desktop top*/
-@media (min-width: 768px)and (max-width: 1280px )   {
+@media (min-width: 1280px)   {
 
     h1{
         font-size:16rem;
