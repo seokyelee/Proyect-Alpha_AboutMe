@@ -53,7 +53,6 @@ body{
         }
 
         .header button:hover {
-            background-color: #FFFFFF;
             color: #03E3BA;
             border: solid 3px #03E3BA;
             }
